@@ -1,4 +1,3 @@
-
 ticks = 0
 emptyObstacleY = 0
 obstacles: List[game.LedSprite] = []
@@ -17,6 +16,7 @@ index = 0
 obstacles = []
 bird = game.create_sprite(0, 2)
 bird.set(LedSpriteProperty.BLINK, 300)
+
 def on_forever():
     global emptyObstacleY, ticks
     while len(obstacles) > 0 and obstacles[0].get(LedSpriteProperty.X) == 0:
